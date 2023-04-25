@@ -44,7 +44,7 @@ def AddEmp():
     first_name = request.form['first_name']
     last_name = request.form['last_name']
     pri_skill = request.form['pri_skill']
-    Company = request.form['Company']
+    Department = request.form['Department']
 
     add_data = "INSERT INTO Emp ( emp_id ,first_name, last_name, pri_skill, Department) VALUES (%s, %s, %s, %s, %s)"
 
