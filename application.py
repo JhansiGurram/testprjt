@@ -9,13 +9,13 @@ app = Flask(__name__)
 client = boto3.client('secretsmanager', region_name='us-east-1')
 
 response = client.get_secret_value(
-  SecretId='Testst1'
+  SecretId='Teststr1'
    )
 database_secrets = json.loads(response['SecretString'])
 username = database_secrets['username']
     
 response = client.get_secret_value(
-    SecretId='Testst1'
+    SecretId='Teststr1'
     )
 database_secrets = json.loads(response['SecretString'])
 password = database_secrets['password']
