@@ -46,7 +46,7 @@ def AddEmp():
     pri_skill = request.form['pri_skill']
     Company = request.form['Company']
 
-    add_data = "INSERT INTO Emp ( emp_id ,first_name, last_name, pri_skill, Company) VALUES (%s, %s, %s, %s, %s)"
+    add_data = "INSERT INTO Emp ( emp_id ,first_name, last_name, pri_skill, Department) VALUES (%s, %s, %s, %s, %s)"
 
     data = (emp_id, first_name, last_name, pri_skill, Company)
     cursor = db_conn.cursor()
