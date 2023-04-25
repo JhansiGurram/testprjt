@@ -48,7 +48,7 @@ def AddEmp():
 
     add_data = "INSERT INTO Emp ( emp_id ,first_name, last_name, pri_skill, Department) VALUES (%s, %s, %s, %s, %s)"
 
-    data = (emp_id, first_name, last_name, pri_skill, Company)
+    data = (emp_id, first_name, last_name, pri_skill, Department)
     cursor = db_conn.cursor()
 
     cursor.execute(add_data, data)
